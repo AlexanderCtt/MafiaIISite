@@ -1,0 +1,120 @@
+.logo
+{
+    width: 4em;
+}
+
+.container
+{
+    border-style: double;
+    background-color: darkkhaki;
+}
+body
+{
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: 1fr 3fr auto;
+    grid-template-areas: "bovenbalk bovenbalk" "menu inhoud" "onderbalk onderbalk";
+
+}
+nav
+{
+    background-color: brown;
+}
+.game-pics
+{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+}
+.game-screenshot
+{
+    margin: 10px;
+    width: 50px;
+}
+.menu
+{
+    grid-area: menu;
+    list-style: none;
+    background-color: brown;
+    margin: 0;
+    margin-right: 15px;
+    
+}
+.menu li
+{
+    margin-top: 40px;
+}
+.menu a
+{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: cornsilk;
+
+    border-style: inset;
+    border: 2px solid rgba(0,0,0,.5);
+    padding: 10px;
+}
+.menu a:hover
+{
+    color:black;
+}
+.about-container
+{
+    grid-area: inhoud;
+}
+.about-container ul
+{
+    list-style: none;
+}
+.about-container li img
+{
+    width: 10px;
+}
+body, html
+{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+.top-container
+{
+    grid-area: bovenbalk;
+    background-image: url(../images/red-bg.PNG);
+    background-repeat: repeat;
+}
+.top-container li
+{
+    vertical-align: middle;
+}
+.top-container ul
+{
+    margin: 2px;
+    padding: 2px;
+}
+.top-container li
+{
+    display: inline-block;
+    list-style: none;
+
+}
+.footer-container
+{
+    grid-area: onderbalk;
+}
+.about-container img:first-child
+{
+    width: 30em;
+}
+.about-container img:nth-child(2)
+{
+    width: 30em;
+}
+.about-container img:nth-child(3)
+{
+    width: 30em;
+}
